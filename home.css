@@ -1,0 +1,406 @@
+@import url(//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist);
+body {
+  background-color: rgb(241, 234, 234);
+  font-family: 'Cardo', serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/*navbar*/
+nav{
+  display: flex;
+  text-align: center;
+  padding: 0;
+  height: 65px;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  z-index: 999;
+  background-color: rgb(244, 238, 238);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.184);
+  justify-content: center;
+}
+nav li{
+  display: inline;  
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+.hov{
+  padding: 0px 30px;
+  color: #000;
+}
+
+.hov:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.689) , rgba(234, 177, 178, 0.785));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.hov a:hover{
+  cursor: pointer;
+  color: rgb(235, 169, 170);
+}
+.hov:hover:before {
+  transform: scaleX(1);
+}
+.search-box {
+  margin-left: 200px;
+  padding-top: 20px;   
+}
+.search-box input{
+  width: 120px;
+  height: 10px;
+  border-radius: 15px;
+  border: 2px solid #454545;
+  padding: 0.5rem;
+}
+.search-box input:hover{
+  border: 2px solid rgb(241, 140, 142);
+}
+.go-icon{
+  background: none;
+  border: none;
+  transform: translateX(-35px);
+}
+.go-icon:hover{
+  cursor: pointer;
+  color: rgb(241, 140, 142);
+}
+
+/* part-1 */
+.all {
+  top: 50px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+}
+
+.all > div {
+  width: 50%;
+ 
+}
+.div2 > img{
+ 
+  width: 100%;
+}
+.div1 > img{
+ 
+  width: 100%;
+}
+.quotes {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%) ;
+  width: 40%;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.645);
+  padding-left: 20px;
+  padding-top: 35px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text >button {
+  margin-bottom: 70px;
+  background-color: black;
+  height: 40px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+.text >button a {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+.text >button:hover {
+  background-color: rgba(234, 177, 178, 0.877);
+  transform: scale(1.01);
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.799);
+}
+
+/* categories */
+.categorie {
+  left: 0px;
+  display: block;
+  position: relative;
+  margin-top: 0px;
+  padding-top: 1.2rem;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: #F1EAEA;
+  height: auto;
+  text-align: center;
+  font-size: large;
+}
+.categorie > h1 {
+  font-family: "Playlist"; src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); 
+  font-size:40px;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+}
+.images {
+  display: flex;
+  height: auto;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 50px;
+}
+.images > div {
+  width: 300px;
+  height: auto;
+
+}
+.img1 , .img3 {
+  margin-bottom: auto;
+  margin-top: 10px; 
+}
+.img2 , .img4 {
+  margin-top: 120px; 
+  margin-bottom: auto;
+}
+.img1 img, .img2 img, .img3 img, .img4 img {
+  width: 80%;
+  border-radius: 125px;
+  transition: all 0.3s ease-in-out;  
+}
+.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
+  transform:scale(1.1);
+  border-radius: 125px;
+  box-shadow: 2px 5px 10px rgba(234, 177, 178, 0.877);
+  opacity:0.9;
+  cursor: pointer;
+}
+
+/* trending products */
+.trend-prod{
+  background-color:rgba(234, 177, 178, 0.53);
+  width: 100%;
+  height: 730px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  font-size: larger;
+}
+.trend-prod h1{
+  font-family: "Playlist"; src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); 
+  font-size: 50px;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+}
+.product {
+  background-color: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 180px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  border-radius: 8px;
+}
+.product:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+  transition-delay: 0.1s;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  
+}
+.product:hover img{
+  cursor: pointer;
+}
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  height: 420px;
+  justify-content: center;
+  margin: auto;
+  gap :60px;
+  padding-top: 30px;
+}
+.product img{
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.2rem;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+  width: 170px;
+}
+.product-description {
+  display: none;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5rem;
+}
+.product.trans{
+  opacity: 1;
+  transform: scale(1.2);
+  transition-delay: 0.1s;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgb(255, 249, 249);
+}
+i.far {
+  color: black;
+}
+
+i.fa {
+  color: red;
+  opacity: 0.7;
+}
+
+i.fa-heart:hover{
+  cursor: pointer;
+}
+.border1 {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(rgb(241, 234, 234) , rgba(234, 177, 178, 0.53));
+}
+.border2 {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient( rgba(234, 177, 178, 0.53), rgb(241, 234, 234));
+}
+
+/* contact us */
+.part-4 {
+  font-family: 'Cardo', serif;
+  text-align: center;
+  height: 600px;
+  width:100vw;
+  margin: 0;
+  top: 0;
+  
+}
+.part-4 h1{
+  font-family: "Playlist"; src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); 
+  font-size: 50px;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+}
+.part-4 form {
+  background-image: linear-gradient(to right, rgba(255, 232, 214, 0.5), rgba(234, 177, 178, 0.53), rgba(234, 177, 178, 0.53), rgba(234, 177, 178, 0.53), rgba(234, 177, 178, 0.53));
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.part-4 input,
+select,
+textarea {
+  border: 1px solid  #D2C8C2;
+  border-radius: 4px;
+  font-family: inherit;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 95%;
+}
+.part-4 button {
+  background-color:rgb(46, 44, 44);
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight:600;
+  width: 35%;
+  margin-bottom: 20px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.301); 
+  transition-duration: 0.4s;
+}
+.part-4 button:hover{
+  background-color: rgb(87, 85, 85);
+  color: white;
+  font-size: 13px;
+  box-shadow: 0px 0px 12px rgb(57,55,55);
+}
+
+/* footer */
+.footer { 
+  background: linear-gradient( rgba(234, 177, 178, 0.53), rgba(234, 177, 178, 0.53), rgb(241, 234, 234));
+  display: flex;
+  padding-top: 10px;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 0px;
+  
+}
+footer .contact{
+  flex-basis: 60%;
+  text-align: center;
+}
+.photo{
+  flex-basis:40%;
+  padding-top: -30px;
+
+}
+footer h2{
+  font-family: "Playlist"; src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); 
+  font-size: 50px;
+  font-weight: lighter;
+  color:rgb(46, 44, 44);
+
+}
+.imag{
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.301);
+  height: 400px;
+ 
+}
+
+footer li{
+  font-size: 22px;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+footer li i{
+  color:rgb(46, 44, 44);
+  font-size:30px;
+  padding-right:10px;
+}
+
+footer hr{
+  color: #E5B5AD;
+}
+footer .fa {
+  padding:10px;
+  color:rgb(46, 44, 44);
+  background-color: #E5B5AD;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+}
+footer  .fa-instagram{
+  margin-left: 20px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./home.css">
+    <link href="//db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-rO+919vLgl1UGwJ1TNEKjZo80pTxBMD7jxmB+G3Xq8U6yDgTHS+R6jvlU2Q8f84W4x4Zf/6YYpwzXIm8uyyWig==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Cozy WebSite Home page</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="hovs" style="margin-left:20%;">
+            <li class="hov"><a href="./home.html" style="color: rgb(241, 140, 142);">Home</a></li>
+            <li class="hov"><a href="./bio-herbel.html">Products</a></li>
+            <li style="font-size: 30px; padding-left: 20px; padding-right: 20px;"><span>Cozy</span></li>
+            <li class="hov"><a href="./login.php">Log in</a></li>
+            <li class="hov"><a href="">Blog</a></li>
+        </ul>
+        <form action="" class="search-box">
+            <input type="text" placeholder="Search" required/>
+            <button type="submit" class="go-icon"><i class="fas fa-search"></i></button>
+        </form>
+    </nav>
+
+<header> 
+    <div class="part1">
+        <div class="all">
+            <div class="div1"><img src="./home22.jpg" ></div>
+            <div class="div2"><img src="./home1.jpg" ></div>
+        </div>
+    
+        <div class="quotes">
+            <div class="text">
+                <h1>Gentle Makeup<br>Removing Cleanser</h1>
+                <h4>the all new gorgeous collection</h4><br>
+                <button><a href="./bio-herbel.html">View Products</a></button>
+            </div>
+        </div>
+
+        <div class="categorie">
+            <h3>Shop by categorie</h3>
+            <h1>Popular categories</h1>
+            <div class="images">
+                <div class="img1"><a href="./bio-herbel.html"><img src="./categ1.jfif" alt=""></a><h3>Bio herbel</h3></div>
+                <div class="img2"><a href="./body-lotion.html"><img src="./categ2.jfif" alt=""></a><h3>Body lotion</h3></div>
+                <div class="img3"><a href=""><img src="./categ3.jfif" alt=""></a><h3>Candle-spa</h3></div>
+                <div class="img4"><a href="./skin-care.html"><img src="./categ4.png" alt=""></a><h3>Skincare</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="border1"></div>
+
+    <div class="trend-prod">
+        <h1>Trending Products</h1>
+        <div class="products">
+            <div class="product">
+                <img src="./2.png" onclick="toggleProductDescription('Product description text.')">
+                <div class="product-description">
+                    <i class="far fa-heart" onclick="changeIcon(this)"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./3.png" onclick="toggleProductDescription('Product description text.')">
+                <div class="product-description">
+                    <i class="far fa-heart" onclick="changeIcon(this)"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./4.jpg" onclick="toggleProductDescription('Product description text.')">
+                <div class="product-description">
+                    <i class="far fa-heart" onclick="changeIcon(this)"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./5.jpg" onclick="toggleProductDescription('Product description text.')">
+                <div class="product-description">
+                    <i class="far fa-heart" onclick="changeIcon(this)"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./6.jpg" onclick="toggleProductDescription('Product description text.')">
+                <div class="product-description">
+                    <i class="far fa-heart" onclick="changeIcon(this)"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./7.jpg" onclick="toggleProductDescription('Product description text.')">
+                <div class="product-description">
+                    <i class="far fa-heart" onclick="changeIcon(this)"></i>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="border2"></div>
+
+    <div class="part-4">
+        <h1>Contact Us</h1>
+        <form id="form">
+            <input type="text"
+                    id="name"
+                    placeholder="Enter your name" />
+            <input type="email"
+                    id="email"
+                    placeholder="Enter your email" />
+            <textarea id="comment" rows="6" placeholder=" Enter your comment here..."></textarea>
+            <button value="submit" >
+                SEND MESSAGE
+            </button>
+        </form>
+
+        <div class="border1"></div>
+
+        <footer>
+            <div class="footer">
+                <div class="contact">
+                    <h2>KEEP ON TOUCH</h2>
+                    <div class="icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <br>
+                    <ul style="list-style-type:none;">
+                        <li><i class="material-icons">phone</i>+216 70 158 269</li>
+                        <li><i class="material-icons">email</i>contact@gmail.com</li>
+                        <li><i class="material-icons">place</i>Campus Mannouba</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="photo">
+                  <img  class="imag" src="./The 5 Skincare Trends You Need on Your Radar For Fall - Molly Sims.jfif" >
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</header>
+</body>
+<script src="./products.js"></script>
+</html>
